@@ -23,5 +23,13 @@ class CalculatorTest {
         assertEquals(2, calculator.deduct(14, 12));
     }
 
+    @Test
+    @DisplayName("Dzielenie")
+    void divide() {
+        assertEquals(10, calculator.divide(30,3));
+        assertEquals(0, calculator.divide(0,3));
+        assertEquals(2.5, calculator.divide(50,20));
 
+        assertThrows(IllegalArgumentException.class, () -> calculator.divide(4, 0));
+    }
 }

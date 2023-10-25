@@ -6,7 +6,7 @@ import org.junit.jupiter.api.function.Executable;
 @DisplayName("Moja klasa testowa")
 class MainTest {
 
-    @BeforeAll// metoda oznaczona jako ta, która ma zostać wykonana raz przed wsyzstkimi metodami
+    @BeforeAll// metoda oznaczona jako ta, która ma zostać wykonana raz przed wsyzstkimi metodami, powinna być statyczną
     static void runAsAFirst(){
         System.out.println("-- Wykonana raz jako pierwsza");
     }
@@ -65,8 +65,6 @@ class MainTest {
         });
 
     }
-
-    // TODO: dopisz dwie kolejne metody testowe
 
     @AfterEach// metoda oznaczona jako ta, która ma być wykonana po każdej metododzie testowyej
     void cleanUp(){

@@ -1,17 +1,28 @@
 package pl.tomasz.smutek.juni1;
 
+/**
+ *  TODO: do wszystkich metod dopisz odpowiadające im testy jednostkowe
+ */
 public class Calculator {
-    // TODO: napisać metodę, która doda dwie liczby rzeczywiste
 
-    // TODO: napisać metodę, która pomnoży diwe liczby rzeczywiste
+    //metoda, która dzieli dwie liczby rzeczywiste
+    public double divide(double a, double b){
+        if (b == 0){
+            throw new IllegalArgumentException();
+        }
 
-    // TODO: napisać metodę, która dzieli dwuie liczby rzeczywiste| UWAGA NA DZIELENIE PRZEZ 0
+        return a/b;
+    }
 
     // metoda, która odejmuje dwie liczby rzeczywiste
     public double deduct(double a,double b){
         return a-b;
     }
 
-    // TODO: do wszystkich metod dopisz odpowiadające im testy jednostkowe
+    // TODO: napisać metodę, która doda dwie liczby rzeczywiste
+
+    // TODO: napisać metodę, która pomnoży dwie liczby rzeczywiste
+
+
 
 }

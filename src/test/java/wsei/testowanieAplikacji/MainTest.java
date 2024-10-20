@@ -1,4 +1,4 @@
-package pl.tomasz.smutek.juni1;
+package wsei.testowanieAplikacji;
 
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.function.Executable;

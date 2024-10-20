@@ -1,4 +1,4 @@
-package pl.tomasz.smutek.juni1;
+package wsei.testowanieAplikacji;
 
 /**
  *  TODO: do wszystkich metod dopisz odpowiadające im testy jednostkowe
@@ -20,9 +20,21 @@ public class Calculator {
     }
 
     // TODO: napisać metodę, która doda dwie liczby rzeczywiste
+    public double add(double a,double b){
+        return a+b;
+    }
 
     // TODO: napisać metodę, która pomnoży dwie liczby rzeczywiste
+    public double multiply(double a,double b){
+        return a*b;
+    }
 
+    public double squareRoot(double a){
+        return Math.sqrt(a);
+    }
 
+    public double cubeRoot(double a){
+        return Math.cbrt(a);
+    }
 
 }

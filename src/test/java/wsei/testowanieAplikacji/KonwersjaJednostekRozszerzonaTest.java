@@ -14,11 +14,11 @@ import java.util.stream.Stream;
 @TestMethodOrder(MethodOrderer.MethodName.class)
 class KonwersjaJednostekRozszerzonaTest {
 
-    KonwersjaJednostekRozszerzona konwersjaJednostek;
+    KonwersjaJednostek konwersjaJednostek;
 
     @BeforeEach
     void setUp() {
-        konwersjaJednostek = new KonwersjaJednostekRozszerzona();
+        konwersjaJednostek = new KonwersjaJednostek();
     }
 
     @TestFactory

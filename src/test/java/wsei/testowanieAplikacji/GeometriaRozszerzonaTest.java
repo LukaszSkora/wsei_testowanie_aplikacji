@@ -15,11 +15,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @TestMethodOrder(MethodOrderer.MethodName.class)
 class GeometriaRozszerzonaTest {
 
-    GeometriaRozszerzona geometria;
+    Geometria geometria;
 
     @BeforeEach
     void setUp() {
-        geometria = new GeometriaRozszerzona();
+        geometria = new Geometria();
     }
 
     @TestFactory

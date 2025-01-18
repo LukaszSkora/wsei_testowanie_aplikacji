@@ -38,14 +38,4 @@ public class AnalizaTekstu {
     public int getLiczbaZnakow() {
         return text.replaceAll("\\s", "").length();
     }
-
-    public static void analizujTekst(String tekst) {
-        AnalizaTekstu analiza = new AnalizaTekstu(tekst);
-
-        System.out.println("Liczba słów: " + analiza.getLiczbaSlow());
-        System.out.println("Liczba zdań: " + analiza.getLiczbaZdan());
-        System.out.println("Średnia długość słowa: " + analiza.getSredniaDlugoscSlowa());
-        System.out.println("Liczba słów unikalnych: " + analiza.getLiczbaUnikalnychSlow());
-        System.out.println("Liczba znaków (bez spacji): " + analiza.getLiczbaZnakow());
-    }
 }

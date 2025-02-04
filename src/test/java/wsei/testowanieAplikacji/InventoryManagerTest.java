@@ -25,6 +25,8 @@ class InventoryManagerTest {
         inventoryManager.updateStock("Produkt1", 5);
 
         assertEquals(5, inventoryManager.getStock("Produkt1"));
+
+        verify(inventoryManager).updateStock("Produkt1", 5);
     }
 
     @Test
@@ -33,6 +35,9 @@ class InventoryManagerTest {
         inventoryManager.updateStock("Produkt1", 7);
 
         assertEquals(12, inventoryManager.getStock("Produkt1"));
+
+        verify(inventoryManager).updateStock("Produkt1", 5);
+        verify(inventoryManager).updateStock("Produkt1", 7);
     }
 
     @Test
@@ -41,5 +46,8 @@ class InventoryManagerTest {
         inventoryManager.updateStock("Produkt1", -3);
 
         assertEquals(2, inventoryManager.getStock("Produkt1"));
+
+        verify(inventoryManager).updateStock("Produkt1", 5);
+        verify(inventoryManager).updateStock("Produkt1", -3);
     }
 }
